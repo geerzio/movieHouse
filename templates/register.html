@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Usuarios</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><i class="fa-solid fa-film"></i>CaC-Movies</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="form-wrapper">
+        <form method="post" novalidate id="form-register">
+          <h2>Registro</h2>
+
+          <div class="form-control">
+            <label for="name">Nombre</label>
+            <input type="text" name="nombre" id="name" required />
+          </div>
+
+          <div class="form-control">
+            <label for="lastName">Apellido</label>
+            <input type="text" name="lastName" required id="lastName" />
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" name="email" required id="email" />
+          </div>
+
+          <div class="form-control">
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" required id="pass" />
+          </div>
+
+          <div class="form-control">
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" required id="pass" />
+          </div>
+
+          <div class="form-control">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="fecha" required id="fecha" />
+          </div>
+
+          <div class="form-control">
+            <select name="country" id="country" class="form-select">
+              <option value="arg">Argentina</option>
+              <option value="bol">Bolivia</option>
+              <option value="par">Paraguay</option>
+              <option value="ven">Venezuela</option>
+            </select>
+          </div>
+
+          <div class="form-terms">
+            <div class="terms">
+              <input type="checkbox" id="terms" />
+              <label>Acepto términos y condiciones</label>
+            </div>
+          </div>
+
+          <button type="submit">
+            <i class="fa-solid fa-film"></i>&nbsp;Registrarse
+          </button>
+          <button type="reset">Borrar todo</button>
+          <div class="form-help">
+            <a href="#">Necesita ayuda?</a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
